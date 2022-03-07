@@ -18,6 +18,33 @@ npm install npm -g
   Node: 16.14.0
   Package Manager: npm 8.5.3
   OS: win32 x64
+
+5. Create a new Angular project: 
+  1) Create a new project
+    ng new (projectname)
+    Error message: 
+      npm ERR! code ETIMEDOUT
+      npm ERR! errno ETIMEDOUT
+      npm ERR! network request to https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz failed, reason: connect ETIMEDOUT 104.18.95.96:443
+      npm ERR! network This is a problem related to network connectivity.
+      npm ERR! network In most cases you are behind a proxy or have bad network settings.
+      npm ERR! network
+      npm ERR! network If you are behind a proxy, please make sure that the
+      npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+      solution:
+      $ npm config rm proxy
+      $ npm config rm https-proxy
+      
+    2) Run the Angular project: under the project folder terminal: 
+      ng serve --open
+      
+      
+      
+      
+  
+      
+  
   
 
   
