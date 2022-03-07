@@ -1,0 +1,24 @@
+1. Install Node.js: from the website
+2. Install npm: 
+npm install npm -g
+  Issue: 
+    Loading personal and system profiles took 948ms.
+    v16.14.0
+    npm ERR! code SELF_SIGNED_CERT_IN_CHAIN
+    npm ERR! errno SELF_SIGNED_CERT_IN_CHAIN
+    npm ERR! request to https://registry.npmjs.org/npm failed, reason: self signed certificate in certificate chain
+  Solution: 
+    npm set strict-ssl false
+   Install again:
+    npm install npm -g
+3. Install Angular cli: 
+    npm install -g @angular/cli
+4. Version: 
+  Angular CLI: 13.2.5
+  Node: 16.14.0
+  Package Manager: npm 8.5.3
+  OS: win32 x64
+  
+
+  
+  
